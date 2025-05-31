@@ -1,0 +1,49 @@
+[
+
+		{
+
+			"name":"test",
+			"alias":["testing","123"],
+			"permission":["admin"],
+			"asset":"test",
+			"description":"test command"
+		},
+
+        	{
+
+			"name":"methods",
+			"alias":["methods page"],
+			"permission":[],
+			"asset":"methods",
+			"description":"methods"
+		},
+
+        	{
+
+			"name":"placepagenamehere",
+			"alias":["infoofpagehere"],
+			"permission":[],
+			"asset":"newscr",
+			"description":"placepagenamehere"      
+		},
+   
+        	{
+
+			"name":"help",
+			"alias":["help screen"],
+			"permission":[],
+			"asset":"help",
+			"description":"help"
+		},   
+
+		{
+			"name":"myinfo",
+			"alias":["acccount","info"],
+
+            "-Comment- Remove this line" : "You do not need to define empty types such as a command with no permissions needed!",
+
+			"asset":"accountinfo",
+			"description":"returns user info"
+		}
+
+]

