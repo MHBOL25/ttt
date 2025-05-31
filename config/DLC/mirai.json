@@ -1,0 +1,29 @@
+{
+    "enabled": true,
+    "port": 818,
+    "auth": [
+        0,
+        0,
+        0,
+        1
+    ],
+    "methods": [
+        {
+            "name": "udp",
+            "id": 0,
+            "devices": 100,
+            "flags": {
+                "len": 1024
+            }
+        },
+        {
+            "name": "tcp",
+            "id": 2,
+            "devices": 100,
+            "flags": {
+                "ack": true,
+                "syn": true
+            }
+        }
+    ]
+}
